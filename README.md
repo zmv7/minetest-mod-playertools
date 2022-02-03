@@ -11,10 +11,14 @@ and are named “`heal`”, “`physics`” and “`hotbar`”, respectively.
 ## List of commands
 ### No privileges required
 
-* `/whoami`: Shows your name in a chat message.
-* `/ip`: Shows your IP address in a chat message.
-* `/pulverizeall`: Destroys all items in your player inventory and crafting grid.
+* `/whoami`: Shows your name in your chat.
+* `/ip`: Shows your IP address in your chat.
+* `/pulverizeall`: Destroys all items in your inventory and crafting grid.
 * `/killme`: Kills yourself.
+
+### “`server`” privilege required
+* `/ip <playername>`: Shows player's IP address in your chat.
+* `/pulverizeall <playername>`: Destroys all items in player's inventory and crafting grid.
 
 ### “`hotbar`” privilege required
 
@@ -24,7 +28,6 @@ and are named “`heal`”, “`physics`” and “`hotbar`”, respectively.
 
 * `/sethp <hp number>` Sets your health to specified number.
 * `/setbreath <breath number>`: Sets your breath to specified breath points.
-
 
 ### “`physics`” privilege required
 
