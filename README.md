@@ -1,4 +1,5 @@
-# Player tools 1.4 [playertools]
+# Player tools 1.5 [playertools]
+Fixed and modified version from https://forum.minetest.net/viewtopic.php?t=7498  
 This mod adds some player-related server commands and privileges to Minetest.
 Most commands are little helper tools, useful for modders and for messing
 around, but they aren’t really suitable for serious gameplay. Some commands
@@ -30,6 +31,7 @@ and are named “`heal`”, “`physics`” and “`hotbar`”, respectively.
 * `/setspeed [<speed>]`: Sets your movement speed to `<speed>` (default: 1).
 * `/setgravity [<gravity>]`: Sets your gravity to `<gravity>` (default: 1).
 * `/setjump [<height>]`: Sets your jump height to `<height>` (default: 1).
+* `/zoomfov [<FOV>]`: Set or display your zoom fov (default: 15).
 
 These commands directly edit the player’s physics parameters.
 
