@@ -268,9 +268,9 @@ if not chk or chk < 0.06 or chk > 30 then return false, "Incorrect value / Out o
 	eye_height=size*1.47,
 	visual_size={x=size,y=size,z=size}})
 if size < "1" then
- player:set_physics_override(tonumber(math.sqrt(size)), 1, 1)
+ player:set_physics_override(math.sqrt(size), 1, nil)
 else
- player:set_physics_override(math.sqrt(size), math.sqrt(size), 1/math.sqrt(size))
+ player:set_physics_override(math.sqrt(size), math.sqrt(size), nil)
 end
 end})
 
