@@ -1,4 +1,4 @@
-# Player tools 1.5 [playertools]
+# Player tools 1.6 [playertools]
 Fixed and modified version from https://forum.minetest.net/viewtopic.php?t=7498  
 This mod adds some player-related server commands and privileges to Minetest.
 Most commands are little helper tools, useful for modders and for messing
@@ -31,12 +31,21 @@ and are named “`heal`”, “`physics`” and “`hotbar`”, respectively.
 
 ### “`physics`” privilege required
 
-* `/setspeed [<speed>]`: Sets your movement speed to `<speed>` (default: 1).
-* `/setgravity [<gravity>]`: Sets your gravity to `<gravity>` (default: 1).
-* `/setjump [<height>]`: Sets your jump height to `<height>` (default: 1).
-* `/zoomfov [<FOV>]`: Set or display your zoom fov (default: 15).
+* `/speed [<playername>] [<speed>]`: Sets your movement speed to `<speed>` (default: 1).
+* `/gravity [<playername>] [<gravity>]`: Sets your gravity to `<gravity>` (default: 1).
+* `/jump [<playername>] [<height>]`: Sets your jump height to `<height>` (default: 1).
+* `/stun <playername>`: Disable player's movement.
+* `/unstun <playername>`: Restore player's movement.
 
-These commands directly edit the player’s physics parameters.
+### “`psize`” privilege required
+
+* `/size <size>`: Change your or another player's size. Range: 0.06 - 30.
+
+### “`ban`” privilege required
+
+* `/xkill <playername>`: Set player's hp to 0 until rejoin (even with admin armor).
+* `/xres <playername>`: Resurrect player with 0 hp
+
 
 
 ## Installation
